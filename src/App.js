@@ -13,6 +13,7 @@ import Button from 'material-ui/Button';
 import { connect } from 'react-redux';
 import { getAlipayImage, openCloseModal } from './Actions';
 import AlipayScreen from './components/AlipayScreen';
+import Helmet from 'react-helmet';
 
 const styles = {
 	root: {
@@ -63,6 +64,7 @@ class MenuAppBar extends React.Component {
 
 		return (
 			<div className={classes.root}>
+				<Helmet title="Wushi Integrated Vendor" />
 				<AppBar position="static">
 					<Toolbar>
 						<IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
